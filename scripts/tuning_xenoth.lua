@@ -29,7 +29,7 @@ function TuneXenoth(overrides)
     XENOTH_SANITY_DELTA_HURTING_ANIMALS = -1,
     XENOTH_SANITY_DELTA_KILLING_ANIMALS = -15,
 
-    XENOTH_SOUNDS_NAME = "willow"
+    XENOTH_SOUNDS_NAME = "willow",
 
     -- Add/remove chest equipable items here that Xenoth can wear and still naked
     XENOTH_BODY_ITEMS_NOT_DRESSING =
