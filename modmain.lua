@@ -40,10 +40,10 @@ local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
 -- The character select screen lines
-STRINGS.CHARACTER_TITLES.xenoth = "The Blue Dreg"
+STRINGS.CHARACTER_TITLES.xenoth = "The Blue Dragon"
 STRINGS.CHARACTER_NAMES.xenoth = "Xenoth"
-STRINGS.CHARACTER_DESCRIPTIONS.xenoth = "*Nudist\n*Vegetarian Dreg\n*Used to Obscurity\n*Animals Lover"
-STRINGS.CHARACTER_QUOTES.xenoth = "\"Rawr!\""
+STRINGS.CHARACTER_DESCRIPTIONS.xenoth = "*Nudist\n*Vegetarian Derg\n*Used to Obscurity\n*Animals Lover"
+STRINGS.CHARACTER_QUOTES.xenoth = "\"Don't boop me!\""
 
 -- Custom speech strings
 STRINGS.CHARACTERS.XENOTH = require "speech_xenoth"

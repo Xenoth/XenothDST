@@ -1,3 +1,4 @@
+-- Here are all the Xenoth's Stats
 TUNING_XENOTH = {}
 
 function TuneXenoth(overrides)
@@ -30,6 +31,7 @@ function TuneXenoth(overrides)
 
     XENOTH_SOUNDS_NAME = "willow"
 
+    -- Add/remove chest equipable items here that Xenoth can wear and still naked
     XENOTH_BODY_ITEMS_NOT_DRESSING =
     {
       "Backpack",
@@ -41,6 +43,7 @@ function TuneXenoth(overrides)
       "Construction Amulet",
     },
 
+    -- Add/remove animals here that Xenoth wont hurt
     XENOTH_ANIMALS_WONT_HURT =
     {
       "Bee",

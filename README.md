@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Xenoth/XenothDST/master/Xenoth/images/names_xenoth.png" width="500"/>
+  <img src="https://raw.githubusercontent.com/Xenoth/XenothDST/master/images/names_xenoth.png" width="500"/>
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 ## Description
 
 <p>
-  A character for Don't Starve Together - WIP
+  Xenoth now playable into Don't Starve Together!
 </p>
 
 ### Perks

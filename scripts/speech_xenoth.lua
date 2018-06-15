@@ -1,13 +1,7 @@
---[[
-	--- This is Wilson's speech file for Don't Starve Together ---
-	Write your character's lines here.
-	If you want to use another speech file as a base, or use a more up-to-date version, get them from data\scripts\
-
-	If you want to use quotation marks in a quote, put a \ before it.
-	Example:
-	"Like \"this\"."
-]]
+-- Here are the speeches of Xenoth
 return {
+
+	-- Customs speeches for Xenoth's perks reactions
 	CUSTOMSPEECHES =
 	{
 		NUDIST =

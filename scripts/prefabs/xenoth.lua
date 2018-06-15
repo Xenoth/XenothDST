@@ -1,4 +1,4 @@
-
+-- Xenoth's main Script file - You should not edit this one 
 local MakePlayerCharacter = require "prefabs/player_common"
 local speech_xenoth_file  = require "speech_xenoth"
 local TuningXenoth = require "tuning_xenoth"
