@@ -15,9 +15,12 @@
   Xenoth now playable into Don't Starve Together!
 </p>
 
+* Forum thread :
+* Steam Workshop :
+
 ### Perks
 ***Nudist** : Gains Sanity if not wearing armors<br>
-***Vegetarian Dreg** : Loses Sanity eating meat<br>
+***Vegetarian Derg** : Loses Sanity eating meat<br>
 ***Used to Obscurity** : Night drains less Sanity than the others<br>
 ***Animals Lover** : Loses Sanity if Hitting and Killing animals<br>
 ### Stats

@@ -44,7 +44,7 @@ return {
 		STORE =
 		{
 			GENERIC = "It's full.",
-			NOTALLOWED = "I don't want to be a bad dreg.",
+			NOTALLOWED = "I don't want to be a bad derg.",
 			INUSE = "Friends are using it.",
 		},
 		WRITE =
@@ -201,7 +201,7 @@ return {
     },
     ANNOUNCE_RUINS_RESET = "Not so glad to see you again!",
 
-	ANNOUNCE_BECOMEGHOST = "Oooh... spooky dreg!",
+	ANNOUNCE_BECOMEGHOST = "Oooh... spooky derg!",
 	ANNOUNCE_GHOSTDRAIN = "I'm becoming... even more monstrous!",
 	ANNOUNCE_PETRIFED_TREES = "The trees are yelling at me!!",
 	ANNOUNCE_KLAUS_ENRAGE = "Ah! I'm sorry I killed your deer!!",
@@ -1965,7 +1965,7 @@ return {
 		TURF_WOODFLOOR = "If I put these on the ground I'll have a floor!",
 		TURKEYDINNER = "Like mother used to make, in the before time!",
 		TWIGS = "Does anyone want to play stick swords with me??",
-		INSPECTSELF = "Hey you sexy dreg!",
+		INSPECTSELF = "Hey you sexy derg!",
 		TWIGGYTREE =
         {
             BURNING = "What a senseless waste of firewood.",

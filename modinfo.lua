@@ -1,11 +1,11 @@
 -- This information tells other players more about the mod
 name = "Xenoth"
-description = "Xenoth now playable into DST!\nPlease leave a comment or an evaluation!"
+description = "Xenoth is now playable into DST!\nPlease leave a comment or an evaluation!"
 author = "Carowouine & Xenoth"
-version = "0.3" -- This is the version of the template. Change it to your own number.
+version = "0.4" -- This is the version of the template. Change it to your own number.
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
-forumthread = "/none/"
+forumthread = "/topic/92163-character-xenoth/"
 
 
 -- This lets other players know if your mod is out of date, update it to match the current version in the game
