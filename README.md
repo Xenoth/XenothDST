@@ -15,8 +15,10 @@
   Xenoth now playable into Don't Starve Together!
 </p>
 
-* Forum thread :
-* Steam Workshop :
+* Forum thread : https://forums.kleientertainment.com/forums/topic/94655-character-xenoth/
+* Steam Workshop : https://steamcommunity.com/sharedfiles/filedetails/?id=1484171691
+
+If you found any issues, please open a Ticket on the GitHub Repo !
 
 ### Perks
 ***Nudist** : Gains Sanity if not wearing armors<br>
