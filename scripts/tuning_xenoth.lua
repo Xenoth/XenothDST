@@ -69,6 +69,10 @@ function TuneXenoth(overrides)
       "Snurtle",
       "Butterfly",
       "Mandrake",
+      "No-Eyed Deer",
+      "Catcoon",
+      "Moleworm",
+      "Glommer"
     },
   }
 end
