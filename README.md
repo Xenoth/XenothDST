@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Xenoth/XenothDST/master/images/names_xenoth.png" width="500"/>
+  <img src="https://raw.githubusercontent.com/Xenoth/XenothDST/screenshots/names_xenoth.png" width="500"/>
 </p>
 
 <p align="center">
