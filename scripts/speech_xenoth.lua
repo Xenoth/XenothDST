@@ -6,17 +6,41 @@ return {
 	{
 		NUDIST =
 		{
-			ONNAKED = "Aaahh.. Feel better!",
-			ONDRESSED = "Burd in jail.",
+			ONNAKED =
+			{
+				"Ah.. Feel better!",
+				"I like to feel the wind on my scales."
+			},
+
+			ONDRESSED =
+			{
+				"It's so unconfortable..."
+				"Burd in jail.",
+				"It irritates my soft scales."
+			},
 		},
 		VEGETARIAN =
 		{
-			EATINGMEAT = "Yuck, culpability's taste.",
+			EATINGMEAT =
+			{
+				"Yuck, culpability's taste.",
+				"I smell... Blood?!",
+				"Do you have some salad instead?"
+			},
 		},
 		ANIMALSLOVER =
 		{
-			HITTINGANIMALS = "Sorry I didn't want to do that!",
-			KILLINGANIMALS = "Regerets."
+			HITTINGANIMALS =
+			{
+				"Sorry I didn't want to do that!",
+				"Hurting you hurts my heart..."
+			},
+			KILLINGANIMALS =
+			{
+				"Regret overwhelms me...",
+				"An innocent creature died because of me...",
+				"I feel so bad for this...",
+			},
 		},
 	},
 	ACTIONFAIL =
@@ -38,14 +62,14 @@ return {
 		},
 		USEKLAUSSACKKEY =
         {
-        	WRONGKEY = "Still locked. How sad.",
-        	KLAUS = "It's too dangerous!",
+        	WRONGKEY = "Not working, no gifts.",
+        	KLAUS = "No way, Santa Klaus is back!",
         },
 		STORE =
 		{
-			GENERIC = "It's full.",
-			NOTALLOWED = "I don't want to be a bad derg.",
-			INUSE = "Friends are using it.",
+			GENERIC = "Time to build another chest!",
+			NOTALLOWED = "It's against the rules!",
+			INUSE = "Hey buddy, I need to empty my pockets!",
 		},
 		WRITE =
         {
@@ -61,7 +85,7 @@ return {
         {
             GENERIC = "And... Cooking is still missed.",
             INUSE = "Can I taste? No meat for me!",
-            TOOFAR = "Too far.",
+            TOOFAR = "My arms aren't long enough.",
         },
         MOUNT =
         {
@@ -81,7 +105,7 @@ return {
             ABIGAILHEART = "Wait, why it's not working on you ?",
             GHOSTHEART = "For now I prefer you in gentle ghost!",
             NOTGEM = "It's not as furry's physic.",
-            WRONGGEM = "I'm colorblind, okay?!.",
+            WRONGGEM = "I'm colorblind, okay?!",
             NOTSTAFF = "I think that'd make it angry.",
             MUSHROOMFARM_NEEDSSHROOM = "It needs mushroom for more mushrooms!",
             MUSHROOMFARM_NEEDSLOG = "It requires a log to work!",
@@ -131,10 +155,10 @@ return {
         },
         PICKUP =
         {
-			RESTRICTION = "I'm don't want do that!",
+					RESTRICTION = "I'm don't want do that!",
         },
 	},
-	ACTIONFAIL_GENERIC = "I suck... really.",
+	ACTIONFAIL_GENERIC = "I never was manual.",
 
 --boarlord event
 	ANNOUNCE_REVIVING_CORPSE = "I'll help you buddy!",
@@ -147,21 +171,21 @@ return {
 	ANNOUNCE_ADVENTUREFAIL = "Fun is over!",
 	ANNOUNCE_BEES = "Smells honey!",
 	ANNOUNCE_BOOMERANG = "Karma!",
-	ANNOUNCE_CHARLIE = "Is it a claw, or you're happy to see me..?",
-	ANNOUNCE_CHARLIE_ATTACK = "Aah! Someone bited me!",
-	ANNOUNCE_COLD = "Brrr... I don't feel my tail anymore.",
-	ANNOUNCE_HOT = "So... hot...",
+	ANNOUNCE_CHARLIE = "Hey lady, dark suits to your... AH!",
+	ANNOUNCE_CHARLIE_ATTACK = "Kaï! It was a compliment!",
+	ANNOUNCE_COLD = "Brr... Can I have warm cuddles...?",
+	ANNOUNCE_HOT = "I'd do anything for a fresh drink.",
 	ANNOUNCE_ANTLION_SINKHOLE =
 	{
-		"I should watch my paws!",
+		"Fluffy ant is hungry!",
 		"Earth is pissed?",
-		"Is it and giant insect?",
+		"Is it a giant insect?",
 	},
 	ANNOUNCE_ANTLION_TRIBUTE =
 	{
         "Gift for you!",
         "You like my present?",
-        "I don't want to become a Starship Trooper.",
+        "I can hear you purring.",
 	},
 	ANNOUNCE_SACREDCHEST_YES = "Glad it likes it!",
 	ANNOUNCE_SACREDCHEST_NO = "Wait it's for you!",
@@ -176,14 +200,14 @@ return {
 	ANNOUNCE_WORMS = "Heard that? I should run now!",
 	ANNOUNCE_EAT =
 	{
-		GENERIC = "Mmmh...!",
-		PAINFUL = "My... belly hurts...",
+		GENERIC = "Mmm... So delicious...!",
+		PAINFUL = "I shouldn't have eat it... Hurts...",
 		SPOILED = "Expiration dates are always pessimist, right?",
-		STALE = "I really should not eat that.",
-		INVALID = "You must confound my mouth with a trash.",
-		YUCKY = "The smells makes me nauseous... I can't.",
+		STALE = "Who forgot to store it?",
+		INVALID = "I can put many things in my muzzle, except this.",
+		YUCKY = "I don't want to mess my mouth up to this point!",
 	},
-    ANNOUNCE_ENCUMBERED =
+    ANNOUNCE_ENCUMBEùRED =
     {
         "Gnnnf...!",
         "So heavy...",
@@ -202,99 +226,111 @@ return {
     ANNOUNCE_RUINS_RESET = "Not so glad to see you again!",
 
 	ANNOUNCE_BECOMEGHOST = "Oooh... spooky derg!",
-	ANNOUNCE_GHOSTDRAIN = "I'm becoming... even more monstrous!",
-	ANNOUNCE_PETRIFED_TREES = "The trees are yelling at me!!",
-	ANNOUNCE_KLAUS_ENRAGE = "Ah! I'm sorry I killed your deer!!",
-	ANNOUNCE_KLAUS_UNCHAINED = "Its belly looks hungry!",
-	ANNOUNCE_KLAUS_CALLFORHELP = "Uh-oh, its got friends coming!",
+	ANNOUNCE_GHOSTDRAIN = "Do you know the Ghost with the twisted bone?",
+	ANNOUNCE_PETRIFED_TREES = "What was that? Tree's doing Rock?",
+	ANNOUNCE_KLAUS_ENRAGE = "Aww! I'm sorry I played with your deers!",
+	ANNOUNCE_KLAUS_UNCHAINED = "Please, not a second Gaping Dragon!",
+	ANNOUNCE_KLAUS_CALLFORHELP = "Moar deers at the party! YES!",
 
 	ANNOUNCE_SNARED = "Hey! Meanie!",
 	ANNOUNCE_REPELLED = "I can't hit it.",
-	ANNOUNCE_ENTER_DARK = "I can't see! I want my nightlight.",
+	ANNOUNCE_ENTER_DARK = "Eeeeeep! I can't see!",
 	ANNOUNCE_ENTER_LIGHT = "Phew, light!",
-	ANNOUNCE_FREEDOM = "I made it!",
-	ANNOUNCE_HIGHRESEARCH = "I'm learning so much!",
-	ANNOUNCE_HOUNDS = "Doggies are coming!",
-	ANNOUNCE_HUNGRY = "It's time for a snack!",
-	ANNOUNCE_HUNT_BEAST_NEARBY = "Fresh tracks!",
-	ANNOUNCE_HUNT_LOST_TRAIL = "Animal went bye-bye.",
+	ANNOUNCE_FREEDOM = "Oh gosh I finally did it!",
+	ANNOUNCE_HIGHRESEARCH = "I'm getting so smart!",
+	ANNOUNCE_HOUNDS = "Did I heard barks?",
+	ANNOUNCE_HUNGRY = "I'll order a salad please!",
+	ANNOUNCE_HUNT_BEAST_NEARBY = "Fresh tracks from friendly animal.",
+	ANNOUNCE_HUNT_LOST_TRAIL = "No more tracks, hoping it's still alive.",
 	ANNOUNCE_HUNT_LOST_TRAIL_SPRING = "It's too muddy to track.",
 	ANNOUNCE_INV_FULL = "My pockets are full!",
 	ANNOUNCE_KNOCKEDOUT = "Ow, my head!",
 	ANNOUNCE_LOWRESEARCH = "That might've taught a toddler something.",
-	ANNOUNCE_MOSQUITOS = "Suck someone else's blood!",
-	ANNOUNCE_NODANGERSLEEP = "Can't sleep with monsters nearby!",
-	ANNOUNCE_NODAYSLEEP = "It's daytime, not bedtime.",
+	ANNOUNCE_MOSQUITOS = "Suck someone else's!",
+	ANNOUNCE_NODANGERSLEEP = "It's hard to sleep when you can be eaten.",
+	ANNOUNCE_NODAYSLEEP = "I Cannot sleep with all this light.",
 	ANNOUNCE_NODAYSLEEP_CAVE = "I'm not ready for bed.",
-	ANNOUNCE_NOHUNGERSLEEP = "My tummy is rumbling, I can't sleep.",
-	ANNOUNCE_NOSLEEPONFIRE = "Mum always said \"Don't sleep in a burning building.\"",
+	ANNOUNCE_NOHUNGERSLEEP = "I should eat something before sleeping.",
+	ANNOUNCE_NOSLEEPONFIRE = "I like sleeping in a warm bed, but not that much!",
 	ANNOUNCE_NODANGERSIESTA = "Can't nap with monsters nearby!",
 	ANNOUNCE_NONIGHTSIESTA = "I can't take a nap, it's nighttime!",
 	ANNOUNCE_NONIGHTSIESTA_CAVE = "No naps til daybreak!",
 	ANNOUNCE_NOHUNGERSIESTA = "Won't be able to nap with a rumbling tummy.",
 	ANNOUNCE_NO_TRAP = "Easy peasy.",
-	ANNOUNCE_PECKED = "Bad bird!",
-	ANNOUNCE_QUAKE = "I don't think that was my tummy.",
+	ANNOUNCE_PECKED = "Ouch! Stop pecking me!",
+	ANNOUNCE_QUAKE = "Earth seems angry!",
 	ANNOUNCE_RESEARCH = "It's almost like being back in school.",
-	ANNOUNCE_SHELTER = "Protect us, tree!",
-	ANNOUNCE_THORNS = "Yowch!",
-	ANNOUNCE_BURNT = "Jeepers, that was hot!",
-	ANNOUNCE_TORCH_OUT = "Waah, my light went out!",
-    ANNOUNCE_FAN_OUT = "Aaw, the twirly is gone.",
-    ANNOUNCE_THURIBLE_OUT = "Aw, there goes my lure.",
-    ANNOUNCE_COMPASS_OUT = "Uh oh, I broke it.",
+	ANNOUNCE_SHELTER = "Trees, you are my best friends!",
+	ANNOUNCE_THORNS = "Kaie! It stings!",
+	ANNOUNCE_BURNT = "My scales are not enough thick, it's hot!",
+	ANNOUNCE_TORCH_OUT = "Uh oh, my torch died!",
+	ANNOUNCE_FAN_OUT = "Aaw, the twirly is gone.",
+	ANNOUNCE_THURIBLE_OUT = "Aw, there goes my lure.",
+	ANNOUNCE_COMPASS_OUT = "Uh oh, I broke it.",
 	ANNOUNCE_TRAP_WENT_OFF = "Eek!",
 	ANNOUNCE_UNIMPLEMENTED = "Gah! It needs more time.",
-	ANNOUNCE_WORMHOLE = "That was a scary hole!",
+	ANNOUNCE_WORMHOLE = "Does it always comes out...?",
 	ANNOUNCE_TOWNPORTALTELEPORT = "I'm here!",
-	ANNOUNCE_CANFIX = "\I can repair it.",
+	ANNOUNCE_CANFIX = "I can repair it.",
 	ANNOUNCE_ACCOMPLISHMENT = "I'm so capable!",
-	ANNOUNCE_ACCOMPLISHMENT_DONE = "I'm a super hero!",
+	ANNOUNCE_ACCOMPLISHMENT_DONE = "I'm so good, I deserve a cookie!",
 	ANNOUNCE_INSUFFICIENTFERTILIZER = "Not good enough for you, plant?",
 	ANNOUNCE_TOOL_SLIP = "Hey! I was using that!",
 	ANNOUNCE_LIGHTNING_DAMAGE_AVOIDED = "I'm invincible!",
 	ANNOUNCE_TOADESCAPING = "It's looking around for a way out.",
 	ANNOUNCE_TOADESCAPED = "Aww, the frog left!",
 
-	ANNOUNCE_DAMP = "Splishy splashy.",
-	ANNOUNCE_WET = "I'm unpleasantly moist.",
-	ANNOUNCE_WETTER = "Wet as a bathtub I can't crawl out of.",
-	ANNOUNCE_SOAKED = "I'm drenched!",
+	ANNOUNCE_DAMP = "It's not because I'm blue that I like water.",
+	ANNOUNCE_WET = "Do you have a towel please?",
+	ANNOUNCE_WETTER = "You want me to suicide, Tefnout?",
+	ANNOUNCE_SOAKED = "It's like i'm drowning...",
 
 	BATTLECRY =
 	{
-		GENERIC = "I have no choice..",
-		PIG = "Get away piggy!",
-		PREY = "Flee me please!",
-		SPIDER = "Ugh, spiders!",
-		SPIDER_WARRIOR = "My skins tougher!",
+		GENERIC = "Get away from me!",
+		PIG = "Run away piggy!",
+		PREY = "Don't let me kill you!",
+		SPIDER = "Thoses creatures are naughty!",
+		SPIDER_WARRIOR = "It's Super Spidertiger!",
 		DEER = "Hopefully I'm the dragon!",
 	},
 	COMBAT_QUIT =
 	{
-		GENERIC = "Well, at least everyone are alive!",
-		PIG = "Maybe piggy forgive me.",
-		PREY = "I didn't actually want to hurt you.",
-		SPIDER = "Run coward!",
-		SPIDER_WARRIOR = "Simmer down, friend.",
+		GENERIC = "Time for peace and love.",
+		PIG = "You'll forgive me, piggy?",
+		PREY = "I didn't want to hurt you.",
+		SPIDER = "That's it, use all your legs!",
+		SPIDER_WARRIOR = "Got it? You're the Supervilain!",
 	},
 	DESCRIBE =
 	{
-        PLAYER =
-        {
-            GENERIC = "Hey! Hi %s!",
-            ATTACKER = "%s looks mean.",
-            MURDERER = "Meanie! Get'em!",
-            REVIVER = "%s is super nice to ghosts.",
-            GHOST = "Don't worry, %s, I'll find you a heart!",
-            FIRESTARTER = "%s, you lit a fire!",
-        },
+
+    PLAYER =
+    {
+        GENERIC = "Hey! Hi %s!",
+        ATTACKER = "%s looks mean.",
+        MURDERER = "Meanie! Get'em!",
+        REVIVER = "%s is super nice to ghosts.",
+        GHOST = "Don't worry, %s, I'll find you a heart!",
+        FIRESTARTER = "%s, you lit a fire!",
+    },
+
+		WAROWOUINE =
+		{
+			GENERIC = "Rawr my dear ochotona!"
+			ATTACKER = "Eep! I promise to change!"
+			MURDERER = "I'll stop you with my love, and my arm."
+			REVIVER = "I always imagine her in nurse costume when she do that."
+			GHOST = "You're still white... Everything is fine!"
+			FIRESTARTER = "%s... Did you forgot the toast again?"
+		}
+
 		WILSON =
 		{
 			GENERIC = "Hi %s! Nice weather we're having!",
 			ATTACKER = "Why are you being so mean, %s?",
 			MURDERER = "Meanie! I will stop you no matter what!",
-			REVIVER = "%s doesn't believe in ghosts, but he believes in us!",
+			REVIVER = "%s doesn't believe in ghosts, but he believes in me!",
 			GHOST = "You're looking much paler than usual, %s!",
 			FIRESTARTER = "Uh... Is your hair smoking, %s?",
         },
@@ -390,17 +426,17 @@ return {
 			GHOST = "Wow! Even as a ghost you're super tough, %s!",
 			FIRESTARTER = "You're supposed to put fires out when you're finished.",
 		},
-        WINONA =
-        {
-            GENERIC = "Hi %s! Build anything neat today?",
-            ATTACKER = "Don't do hits, %s!",
-            MURDERER = "Murderer! I didn't wanna have to do this!",
-            REVIVER = "%s keeps us all together.",
-            GHOST = "Aw, I'm sorry that happened to you, %s.",
-            FIRESTARTER = "Don't light fires, %s!",
-        },
+    WINONA =
+    {
+        GENERIC = "Hi %s! Build anything neat today?",
+        ATTACKER = "Don't do hits, %s!",
+        MURDERER = "Murderer! I didn't wanna have to do this!",
+        REVIVER = "%s keeps us all together.",
+        GHOST = "Aw, I'm sorry that happened to you, %s.",
+        FIRESTARTER = "Don't light fires, %s!",
+    },
 
-        MULTIPLAYER_PORTAL = "It's pretty... pretty scary!",
+    MULTIPLAYER_PORTAL = "It's pretty... pretty scary!",
 
 		BERNIE_INACTIVE =
 		{
@@ -890,7 +926,7 @@ return {
 		PANDORASCHEST = "Stylish storage.",
 		SCORCHED_SKELETON = "They're probably fine.",
 		CAVE_BANANA_BURNT = "Oopsie doodle.",
-		BIRD_EGG_COOKED = "Fried just like mum did.",
+		BIRD_EGG_COOKED = "I like eating it at breakfast.",
 		BISHOP = "You don't play by the chess rules grandpa taught me.",
 		BLOWDART_FIRE = "One step above blowing hot air.",
 		BLOWDART_SLEEP = "Airborne sleeping agent.",
@@ -2015,9 +2051,9 @@ return {
 		WALRUS_TUSK = "Maybe I can use it for arts and crafts.",
 		WARDROBE =
 		{
-			GENERIC = "I like to pop out and scare my friends sometimes. Haha!",
-            BURNING = "Fire fire fire!",
-			BURNT = "I can't hide in there any more.",
+			GENERIC = "It's a prison full of dangerous clothes!",
+            BURNING = "I swear it's not me!",
+			BURNT = "Clothes are now burning in hell!",
 		},
 		WARG = "I don't think that puppy is very happy.",
 		WASPHIVE = "Sounds like anger!",
@@ -2027,7 +2063,7 @@ return {
 		WATERMELONHAT = "This is the best idea anyone's ever had.",
 		WETGOOP = "Experimenting is fun!",
         WHIP = "Oooh, it makes so much noise!",
-		WINTERHAT = "Mum always said I should take a cap with me.",
+		WINTERHAT = "It will protect my ears from cold wind.",
 		WINTEROMETER =
 		{
 			GENERIC = "How hot is it, Mr. Thermal Measurer?",
