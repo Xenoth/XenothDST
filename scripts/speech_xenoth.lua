@@ -14,9 +14,9 @@ return {
 
 			ONDRESSED =
 			{
-				"It's so unconfortable..."
+				"It's so unconfortable...",
 				"Burd in jail.",
-				"It irritates my soft scales."
+				"It irritates my soft scales.",
 			},
 		},
 		VEGETARIAN =
@@ -207,7 +207,7 @@ return {
 		INVALID = "I can put many things in my muzzle, except this.",
 		YUCKY = "I don't want to mess my mouth up to this point!",
 	},
-    ANNOUNCE_ENCUMBEùRED =
+    ANNOUNCE_ENCUMBERED =
     {
         "Gnnnf...!",
         "So heavy...",
@@ -317,13 +317,13 @@ return {
 
 		WAROWOUINE =
 		{
-			GENERIC = "Rawr my dear ochotona!"
-			ATTACKER = "Eep! I promise to change!"
-			MURDERER = "I'll stop you with my love, and my arm."
-			REVIVER = "I always imagine her in nurse costume when she do that."
-			GHOST = "You're still white... Everything is fine!"
-			FIRESTARTER = "%s... Did you forgot the toast again?"
-		}
+			GENERIC = "Rawr my dear ochotona!",
+			ATTACKER = "Eep! I promise to change!",
+			MURDERER = "I'll stop you with my love, and my arm.",
+			REVIVER = "I always imagine her in nurse costume when she do that.",
+			GHOST = "You're still white... Everything is fine!",
+			FIRESTARTER = "%s... Did you forgot the toast again?",
+		},
 
 		WILSON =
 		{
