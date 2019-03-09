@@ -8,7 +8,7 @@ return {
 		{
 			ONNAKED =
 			{
-				"Ah.. Feel better!",
+				"Ah... Feel better!",
 				"I like to feel the wind on my scales."
 			},
 
@@ -155,7 +155,7 @@ return {
         },
         PICKUP =
         {
-					RESTRICTION = "I'm don't want do that!",
+					RESTRICTION = "I can't do that!",
         },
 	},
 	ACTIONFAIL_GENERIC = "I never was manual.",
@@ -246,9 +246,9 @@ return {
 	ANNOUNCE_INV_FULL = "My pockets are full!",
 	ANNOUNCE_KNOCKEDOUT = "Ow, my head!",
 	ANNOUNCE_LOWRESEARCH = "That might've taught a toddler something.",
-	ANNOUNCE_MOSQUITOS = "Suck someone else's!",
+	ANNOUNCE_MOSQUITOS = "Suck someone else!",
 	ANNOUNCE_NODANGERSLEEP = "It's hard to sleep when you can be eaten.",
-	ANNOUNCE_NODAYSLEEP = "I Cannot sleep with all this light.",
+	ANNOUNCE_NODAYSLEEP = "I cannot sleep with all this light.",
 	ANNOUNCE_NODAYSLEEP_CAVE = "I'm not ready for bed.",
 	ANNOUNCE_NOHUNGERSLEEP = "I should eat something before sleeping.",
 	ANNOUNCE_NOSLEEPONFIRE = "I like sleeping in a warm bed, but not that much!",
@@ -264,7 +264,7 @@ return {
 	ANNOUNCE_THORNS = "Kaie! It stings!",
 	ANNOUNCE_BURNT = "My scales are not enough thick, it's hot!",
 	ANNOUNCE_TORCH_OUT = "Uh oh, my torch died!",
-	ANNOUNCE_FAN_OUT = "Aaw, the twirly is gone.",
+	ANNOUNCE_FAN_OUT = "Aw, the twirly is gone.",
 	ANNOUNCE_THURIBLE_OUT = "Aw, there goes my lure.",
 	ANNOUNCE_COMPASS_OUT = "Uh oh, I broke it.",
 	ANNOUNCE_TRAP_WENT_OFF = "Eek!",
