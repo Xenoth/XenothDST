@@ -27,7 +27,9 @@ function TuneXenoth(overrides)
 
     XENOTH_SANITY_DELTA_EATING_MEAT = -10,
     XENOTH_SANITY_DELTA_HURTING_ANIMALS = -1,
-    XENOTH_SANITY_DELTA_KILLING_ANIMALS = -15,
+    XENOTH_SANITY_DELTA_KILLING_ANIMALS_PRIORITY_3 = -15,
+    XENOTH_SANITY_DELTA_KILLING_ANIMALS_PRIORITY_2 = -45,
+    XENOTH_SANITY_DELTA_KILLING_ANIMALS_PRIORITY_1 = -65,
 
     XENOTH_SOUNDS_NAME = "willow",
 
@@ -44,19 +46,16 @@ function TuneXenoth(overrides)
     },
 
     -- Add/remove animals here that Xenoth wont hurt
-    XENOTH_ANIMALS_WONT_HURT =
+    XENOTH_ANIMALS_WONT_HURT_PRIORITY_3 =
     {
       "Bee",
       "Pig Man",
       "Koalefant",
-      "Smallish Tallbird",
       "Tallbird",
-      "Smallbird",
       --"Splumonkey",
       "Slurtle",
       "Beefalo",
       "Domesticated Beefalo",
-      "Baby Beefalo",
       "Pengull",
       "Bunnyman",
       "Rabbit",
@@ -72,7 +71,19 @@ function TuneXenoth(overrides)
       "No-Eyed Deer",
       "Catcoon",
       "Moleworm",
-      "Glommer"
+      "Volt Goat"
+    },
+
+    XENOTH_ANIMALS_WONT_HURT_PRIORITY_2 =
+    {
+        "Smallish Tallbird",
+        "Baby Beefalo",
+        "Smallbird",
+    },
+
+    XENOTH_ANIMALS_WONT_HURT_PRIORITY_1 =
+    {
+        "Glommer"
     },
   }
 end

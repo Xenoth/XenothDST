@@ -1,4 +1,4 @@
--- Xenoth's main Script file - You should not edit this one 
+-- Xenoth's main Script file - You should not edit this one
 local MakePlayerCharacter = require "prefabs/player_common"
 local speech_xenoth_file  = require "speech_xenoth"
 local TuningXenoth = require "tuning_xenoth"
@@ -52,13 +52,18 @@ local master_postinit = function(inst)
 	-- Uncomment if "wathgrithr"(Wigfrid) or "webber" voice is used
   -- inst.talker_path_override = "dontstarve_DLC001/characters/"
 
+    -- Utils
+    local function randomSpeech(speechTab)
+      return speechTab[math.random( #speechTab)]
+    end
+
     -- Vegetarian
     inst.components.eater.oneatfn = function(inst, food)
         local delta = nil
         if food.components.edible.foodtype == FOODTYPE.MEAT
         then
           delta = TUNING_XENOTH.XENOTH_SANITY_DELTA_EATING_MEAT
-          inst.components.talker:Say(speech_xenoth_file.CUSTOMSPEECHES.VEGETARIAN.EATINGMEAT)
+          inst.components.talker:Say(randomSpeech(speech_xenoth_file.CUSTOMSPEECHES.VEGETARIAN.EATINGMEAT))
         end
         if delta then inst.components.sanity:DoDelta(delta) end
     end
@@ -94,14 +99,14 @@ local master_postinit = function(inst)
       local equipOnBody = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.BODY)
       if EquipOnDressFilter(equipOnBody) then
         if not wasNaked then
-          inst.components.talker:Say(speech_xenoth_file.CUSTOMSPEECHES.NUDIST.ONNAKED)
+          inst.components.talker:Say(randomSpeech(speech_xenoth_file.CUSTOMSPEECHES.NUDIST.ONNAKED))
           wasNaked = true
         end
       else
         if wasNaked
         then
            wasNaked = false
-           inst.components.talker:Say(speech_xenoth_file.CUSTOMSPEECHES.NUDIST.ONDRESSED)
+           inst.components.talker:Say(randomSpeech(speech_xenoth_file.CUSTOMSPEECHES.NUDIST.ONDRESSED))
         end
       end
     end
@@ -117,31 +122,55 @@ local master_postinit = function(inst)
       local name = target.name
       if name == nil then return true
       else
-        for i=1, #TUNING_XENOTH.XENOTH_ANIMALS_WONT_HURT, 1 do
-          if name == TUNING_XENOTH.XENOTH_ANIMALS_WONT_HURT[i]
+        for i=1, #TUNING_XENOTH.XENOTH_ANIMALS_WONT_HURT_PRIORITY_1, 1 do
+          if name == TUNING_XENOTH.XENOTH_ANIMALS_WONT_HURT_PRIORITY_1[i]
           then
-            return true
+            return 1
           end
         end
-        return false
+        for i=1, #TUNING_XENOTH.XENOTH_ANIMALS_WONT_HURT_PRIORITY_2, 1 do
+          if name == TUNING_XENOTH.XENOTH_ANIMALS_WONT_HURT_PRIORITY_2[i]
+          then
+            return 2
+          end
+        end
+        for i=1, #TUNING_XENOTH.XENOTH_ANIMALS_WONT_HURT_PRIORITY_3, 1 do
+          if name == TUNING_XENOTH.XENOTH_ANIMALS_WONT_HURT_PRIORITY_3[i]
+          then
+            return 3
+          end
+        end
+        return 0
       end
     end
 
     local function OnAttackOther(inst, data)
       local target = data.target
-      if data.target and AnimalFilter(target) and not target.components.health:IsDead()
+      if data.target and AnimalFilter(target) > 0 and not target.components.health:IsDead()
       then
-          inst.components.talker:Say(speech_xenoth_file.CUSTOMSPEECHES.ANIMALSLOVER.HITTINGANIMALS)
+          inst.components.talker:Say(randomSpeech(speech_xenoth_file.CUSTOMSPEECHES.ANIMALSLOVER.HITTINGANIMALS))
           inst.components.sanity:DoDelta(TUNING_XENOTH.XENOTH_SANITY_DELTA_HURTING_ANIMALS)
       end
     end
 
     local function OnKillingOther(inst, data)
       local victim = data.victim or nil
-      if victim and AnimalFilter(victim)
+      local priority = AnimalFilter(victim)
+      if victim and priority > 0
       then
-        inst.components.talker:Say(speech_xenoth_file.CUSTOMSPEECHES.ANIMALSLOVER.KILLINGANIMALS)
-        inst.components.sanity:DoDelta(TUNING_XENOTH.XENOTH_SANITY_DELTA_KILLING_ANIMALS)
+        local delta
+        if priority == 1
+        then
+          delta = TUNING_XENOTH.XENOTH_SANITY_DELTA_KILLING_ANIMALS_PRIORITY_1
+        elseif priority == 2
+        then
+          delta = TUNING_XENOTH.XENOTH_SANITY_DELTA_KILLING_ANIMALS_PRIORITY_2
+        elseif priority == 3
+        then
+          delta = TUNING_XENOTH.XENOTH_SANITY_DELTA_KILLING_ANIMALS_PRIORITY_3
+        end
+        inst.components.talker:Say(randomSpeech(speech_xenoth_file.CUSTOMSPEECHES.ANIMALSLOVER.KILLINGANIMALS))
+        inst.components.sanity:DoDelta(delta)
       end
     end
 
