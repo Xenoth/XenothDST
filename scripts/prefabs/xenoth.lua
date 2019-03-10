@@ -156,7 +156,6 @@ local master_postinit = function(inst)
     local function OnKillingOther(inst, data)
       local victim = data.victim or nil
       local priority = AnimalFilter(victim)
-      print("Priority value ", priority)
       if victim and priority > 0
       then
         local delta

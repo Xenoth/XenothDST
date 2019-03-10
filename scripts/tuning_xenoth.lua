@@ -71,6 +71,7 @@ function TuneXenoth(overrides)
       "No-Eyed Deer",
       "Catcoon",
       "Moleworm",
+      "Volt Goat"
     },
 
     XENOTH_ANIMALS_WONT_HURT_PRIORITY_2 =

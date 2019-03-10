@@ -36,6 +36,8 @@ Created using [Extended Sample Character Template](https://forums.kleientertainm
 - [x] Don't Starve Together
 - [ ] Don't Starve
 - [ ] Reign of Giants
+
+A Port for Don't Starve can be found here : <a href="https://github.com/Xenoth/XenothDS">Repo of XenothDS</a>
 ## How to install
 <p align="center">
   <a href="https://github.com/Xenoth/XenothDST/wiki/Installation#manual-installation">Manual Installation</a> |
